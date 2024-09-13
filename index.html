@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="calculator">
+        <h1 class="calculator-name">Josephdev</h1>
         <input type="text" id="display" disabled aria-label="Calculator display">
         <div class="buttons">
             <button type="button" onclick="clearDisplay()" aria-label="Clear">C</button>
@@ -31,7 +32,7 @@
             <button type="button" onclick="appendToDisplay('.')" aria-label="Decimal point">.</button>
             <button type="button" class="equals" onclick="calculateResult()" aria-label="Calculate result">=</button>
             <button type="button" onclick="appendToDisplay('Math.sqrt(')" aria-label="Square root">√</button>
-            <button type="button" onclick="appendToDisplay('Math.pow(')" aria-label="Power">x²</button>
+            <button type="button" onclick="appendToDisplay('^')" aria-label="Power">^</button> 
             <button type="button" onclick="appendToDisplay('Math.sin(')" aria-label="Sine">sin</button>
             <button type="button" onclick="appendToDisplay('Math.cos(')" aria-label="Cosine">cos</button>
             <button type="button" onclick="appendToDisplay('Math.tan(')" aria-label="Tangent">tan</button>
