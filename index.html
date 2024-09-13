@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive scientific calculator with basic and advanced mathematical functions.">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled aria-label="Calculator display">
+        <div class="buttons">
+            <button type="button" onclick="clearDisplay()" aria-label="Clear">C</button>
+            <button type="button" onclick="appendToDisplay('(')" aria-label="Open parenthesis">(</button>
+            <button type="button" onclick="appendToDisplay(')')" aria-label="Close parenthesis">)</button>
+            <button type="button" onclick="appendToDisplay('/')" aria-label="Divide">/</button>
+            <button type="button" onclick="appendToDisplay('7')" aria-label="Number 7">7</button>
+            <button type="button" onclick="appendToDisplay('8')" aria-label="Number 8">8</button>
+            <button type="button" onclick="appendToDisplay('9')" aria-label="Number 9">9</button>
+            <button type="button" onclick="appendToDisplay('*')" aria-label="Multiply">*</button>
+            <button type="button" onclick="appendToDisplay('4')" aria-label="Number 4">4</button>
+            <button type="button" onclick="appendToDisplay('5')" aria-label="Number 5">5</button>
+            <button type="button" onclick="appendToDisplay('6')" aria-label="Number 6">6</button>
+            <button type="button" onclick="appendToDisplay('-')" aria-label="Subtract">-</button>
+            <button type="button" onclick="appendToDisplay('1')" aria-label="Number 1">1</button>
+            <button type="button" onclick="appendToDisplay('2')" aria-label="Number 2">2</button>
+            <button type="button" onclick="appendToDisplay('3')" aria-label="Number 3">3</button>
+            <button type="button" onclick="appendToDisplay('+')" aria-label="Add">+</button>
+            <button type="button" onclick="appendToDisplay('0')" aria-label="Number 0">0</button>
+            <button type="button" onclick="appendToDisplay('.')" aria-label="Decimal point">.</button>
+            <button type="button" class="equals" onclick="calculateResult()" aria-label="Calculate result">=</button>
+            <button type="button" onclick="appendToDisplay('Math.sqrt(')" aria-label="Square root">√</button>
+            <button type="button" onclick="appendToDisplay('Math.pow(')" aria-label="Power">x²</button>
+            <button type="button" onclick="appendToDisplay('Math.sin(')" aria-label="Sine">sin</button>
+            <button type="button" onclick="appendToDisplay('Math.cos(')" aria-label="Cosine">cos</button>
+            <button type="button" onclick="appendToDisplay('Math.tan(')" aria-label="Tangent">tan</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
